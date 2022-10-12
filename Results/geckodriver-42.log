@@ -1,0 +1,12 @@
+1665587156714	geckodriver	INFO	Listening on 127.0.0.1:57000
+1665587159793	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57001" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofile1wl2sh"
+1665587160332	Marionette	INFO	Marionette enabled
+1665587160340	Marionette	INFO	Listening on port 57010
+Read port: 57010
+WebDriver BiDi listening on ws://127.0.0.1:57001
+1665587160502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofile1wl2sh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57001/devtools/browser/31e9af3b-3076-4639-aafb-3276d7dd1fc7
+1665587163318	Marionette	INFO	Stopped listening on port 57010
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed

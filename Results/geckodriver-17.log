@@ -1,0 +1,12 @@
+1665578476274	geckodriver	INFO	Listening on 127.0.0.1:51570
+1665578479316	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileSXRznw"
+1665578479867	Marionette	INFO	Marionette enabled
+1665578479876	Marionette	INFO	Listening on port 51580
+Read port: 51580
+WebDriver BiDi listening on ws://127.0.0.1:51571
+1665578480085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileSXRznw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51571/devtools/browser/a4fd1adc-ffd9-44dd-9513-e7aef87e8921
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+1665578497154	Marionette	INFO	Stopped listening on port 51580

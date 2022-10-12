@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221012 20:51:58.388" rpa="true" schemaversion="3">
+<suite id="s1" name="InputForms" source="C:\development\robot-scripts\input-forms\tests\InputForms.robot">
+<test id="s1-t1" name="Input data" line="15">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 20:51:58.997" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20221012 20:51:59.013" level="INFO">Firefox driver log is always forced to to: C:\development\robot-scripts\input-forms\results\geckodriver-48.log</msg>
+<status status="PASS" starttime="20221012 20:51:58.997" endtime="20221012 20:52:05.305"/>
+</kw>
+<status status="PASS" starttime="20221012 20:51:58.997" endtime="20221012 20:52:05.305"/>
+</kw>
+<kw name="Enter Data" library="InputApp">
+<kw name="Load" library="InputPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221012 20:52:05.321" level="INFO">Opening url 'https://www.rpachallenge.com'</msg>
+<status status="PASS" starttime="20221012 20:52:05.321" endtime="20221012 20:52:06.758"/>
+</kw>
+<status status="PASS" starttime="20221012 20:52:05.321" endtime="20221012 20:52:06.758"/>
+</kw>
+<kw name="Verify Page Loaded" library="InputPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ADDRESS_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.758" endtime="20221012 20:52:06.785"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${COMPANY_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.785" endtime="20221012 20:52:06.794"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.794" endtime="20221012 20:52:06.803"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FIRST_NAME_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.803" endtime="20221012 20:52:06.812"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${LAST_NAME_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.812" endtime="20221012 20:52:06.812"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${PHONE_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.812" endtime="20221012 20:52:06.821"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ROLE_INPUT}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221012 20:52:06.821" endtime="20221012 20:52:06.830"/>
+</kw>
+<status status="PASS" starttime="20221012 20:52:06.758" endtime="20221012 20:52:06.830"/>
+</kw>
+<kw name="Open Excel File" library="ExcelProcessing">
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>filename=${FILE_PATH}</arg>
+<arg>doc_id=docid</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20221012 20:52:06.830" endtime="20221012 20:52:06.938"/>
+</kw>
+<status status="PASS" starttime="20221012 20:52:06.830" endtime="20221012 20:52:06.938"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${iteration}</var>
+<value>2</value>
+<value>11</value>
+<iter>
+<var name="${iteration}">2</var>
+<kw name="Loop And Read Through Cells And Append List" library="ExcelProcessing">
+<arg>${iteration}</arg>
+<for flavor="IN RANGE">
+<var>${row}</var>
+<value>${iteration}</value>
+<value>${iteration}</value>
+<iter>
+<var name="${row}"/>
+<for flavor="IN RANGE">
+<var>${col}</var>
+<value>1</value>
+<value>7</value>
+<iter>
+<var name="${col}"/>
+<kw name="Read Excel Cells" library="ExcelProcessing">
+<arg>${row}</arg>
+<arg>${col}</arg>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${CELL_VALUE}</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>@{INPUT_DATA}</arg>
+<arg>${CELL_VALUE}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</iter>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</for>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</iter>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</for>
+<status status="PASS" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Insert Data Into Input Fields" library="InputPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS_INPUT}</arg>
+<arg>@{INPUT_DATA}[5]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 20:52:06.938" level="FAIL">List '@{INPUT_DATA}' has no item in index 5.</msg>
+<status status="FAIL" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${COMPANY_INPUT}</arg>
+<arg>@{INPUT_DATA}[2]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>@{INPUT_DATA}[6]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRST_NAME_INPUT}</arg>
+<arg>@{INPUT_DATA}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LAST_NAME_INPUT}</arg>
+<arg>@{INPUT_DATA}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PHONE_INPUT}</arg>
+<arg>@{INPUT_DATA}[7]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ROLE_INPUT}</arg>
+<arg>@{INPUT_DATA}[3]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<status status="FAIL" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Click Submit Button" library="InputPage">
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Verify Page Loaded" library="InputPage">
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<arg>@{INPUT_DATA}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<status status="FAIL" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</iter>
+<status status="FAIL" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</for>
+<kw name="Close Excel File" library="ExcelProcessing">
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221012 20:52:06.938" endtime="20221012 20:52:06.938"/>
+</kw>
+<status status="FAIL" starttime="20221012 20:52:05.321" endtime="20221012 20:52:06.938"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 20:52:06.947" endtime="20221012 20:52:08.015"/>
+</kw>
+<status status="PASS" starttime="20221012 20:52:06.947" endtime="20221012 20:52:08.015"/>
+</kw>
+<doc>Task imports</doc>
+<status status="FAIL" starttime="20221012 20:51:58.997" endtime="20221012 20:52:08.027">List '@{INPUT_DATA}' has no item in index 5.</status>
+</test>
+<status status="FAIL" starttime="20221012 20:51:58.388" endtime="20221012 20:52:08.028"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="InputForms">InputForms</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

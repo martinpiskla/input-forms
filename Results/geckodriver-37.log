@@ -1,0 +1,13 @@
+1665579656543	geckodriver	INFO	Listening on 127.0.0.1:54972
+1665579659593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54973" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileTVbKJQ"
+1665579660208	Marionette	INFO	Marionette enabled
+1665579660220	Marionette	INFO	Listening on port 54982
+Read port: 54982
+WebDriver BiDi listening on ws://127.0.0.1:54973
+1665579660447	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileTVbKJQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54973/devtools/browser/c0254d84-0cef-4419-98f9-6c623cd76904
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+1665579677489	Marionette	INFO	Stopped listening on port 54982
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\Martin\AppData\Local\Temp\rust_mozprofileTVbKJQ\protections.sqlite

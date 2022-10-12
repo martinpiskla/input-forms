@@ -1,0 +1,10 @@
+1665604118032	geckodriver	INFO	Listening on 127.0.0.1:60879
+1665604121096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60880" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileeYIRd6"
+1665604121582	Marionette	INFO	Marionette enabled
+1665604121590	Marionette	INFO	Listening on port 60889
+Read port: 60889
+WebDriver BiDi listening on ws://127.0.0.1:60880
+1665604121765	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileeYIRd6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60880/devtools/browser/e4a339e1-5ebc-4047-9fbd-bbb098257011
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."

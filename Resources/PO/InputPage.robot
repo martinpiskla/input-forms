@@ -27,13 +27,13 @@ Verify Page Loaded
         wait until page contains element    ${ROLE_INPUT}    timeout=15s
 
 Insert Data Into Input Fields
-        input text  ${ADDRESS_INPUT}    @{INPUT_DATA}[5]
-        input text  ${COMPANY_INPUT}    @{INPUT_DATA}[2]
-        input text  ${EMAIL_INPUT}    @{INPUT_DATA}[6]
-        input text  ${FIRST_NAME_INPUT}    @{INPUT_DATA}[0]
-        input text  ${LAST_NAME_INPUT}    @{INPUT_DATA}[1]
-        input text  ${PHONE_INPUT}    @{INPUT_DATA}[7]
-        input text  ${ROLE_INPUT}    @{INPUT_DATA}[3]
+        input text  ${ADDRESS_INPUT}    ${INPUT_DATA}[4]
+        input text  ${COMPANY_INPUT}    ${INPUT_DATA}[2]
+        input text  ${EMAIL_INPUT}    ${INPUT_DATA}[5]
+        input text  ${FIRST_NAME_INPUT}    ${INPUT_DATA}[0]
+        input text  ${LAST_NAME_INPUT}    ${INPUT_DATA}[1]
+        input text  ${PHONE_INPUT}    ${INPUT_DATA}[6]
+        input text  ${ROLE_INPUT}    ${INPUT_DATA}[3]
         sleep    5s
 
 Click Submit Button

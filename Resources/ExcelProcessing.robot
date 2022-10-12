@@ -4,6 +4,7 @@ Library     Collections
 
 *** Variables ***
 ${FILE_PATH} =        C:/\development/robot-scripts/\input-forms/\Resources/\challenge.xlsx
+@{INPUT_DATA}
 
 *** Keywords ***
 Open Excel File
@@ -17,14 +18,19 @@ Read Excel Cells
 Close Excel File
     close current excel document
 
+Clear List Values
+    FOR     ${elem}    IN    @{INPUT_DATA}
+        Remove values from list    ${INPUT_DATA}    ${elem}
+    END
+
 Loop And Read Through Cells And Append List
     [Arguments]     ${iteration}
-    FOR    ${row}   IN RANGE    ${iteration}    ${iteration}
-        FOR   ${col}   IN RANGE    1    7
+    FOR    ${row}   IN      ${iteration}
+        FOR   ${col}   IN RANGE    1    8
         #do something
         Read Excel Cells    ${row}  ${col}
         Log     ${CELL_VALUE}   console=yes
-        Append To List  @{INPUT_DATA}   ${CELL_VALUE}
+        Append To List  ${INPUT_DATA}   ${CELL_VALUE}
         END
     END
 

@@ -1,0 +1,20 @@
+1665604369146	geckodriver	INFO	Listening on 127.0.0.1:61148
+1665604372246	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61149" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofilezZkM6c"
+1665604372729	Marionette	INFO	Marionette enabled
+1665604372735	Marionette	INFO	Listening on port 61159
+Read port: 61159
+WebDriver BiDi listening on ws://127.0.0.1:61149
+1665604372919	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofilezZkM6c\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61149/devtools/browser/973d4b48-6d13-48b2-8a25-cef9e6687f1a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+1665604439901	Marionette	INFO	Stopped listening on port 61159

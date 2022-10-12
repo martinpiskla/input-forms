@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library     Collections
 
 *** Keywords ***
 Begin Web Test

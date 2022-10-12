@@ -9,7 +9,7 @@ Test Teardown    End Web Test
 ${BROWSER} =        firefox
 ${START_URL} =      https://www.rpachallenge.com
 ${SEARCH_TERM} =        Lamborghini
-@{INPUT_DATA}
+#@{INPUT_DATA}
 
 *** Tasks ***
 Input data

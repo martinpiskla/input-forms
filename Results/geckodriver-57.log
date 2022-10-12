@@ -1,0 +1,11 @@
+1665602809684	geckodriver	INFO	Listening on 127.0.0.1:58543
+1665602812750	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58544" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileTgA1hy"
+1665602813224	Marionette	INFO	Marionette enabled
+1665602813232	Marionette	INFO	Listening on port 58553
+Read port: 58553
+WebDriver BiDi listening on ws://127.0.0.1:58544
+1665602813398	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileTgA1hy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58544/devtools/browser/05e6e578-e128-4c7d-acbb-1eb30f7b3aeb
+1665602818148	Marionette	INFO	Stopped listening on port 58553
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1108: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\Martin\AppData\Local\Temp\rust_mozprofileTgA1hy\protections.sqlite

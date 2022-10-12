@@ -8,7 +8,7 @@ ${FILE_PATH} =        C:/\development/robot-scripts/\input-forms/\Resources/\cha
 
 *** Keywords ***
 Open Excel File
-    Open Excel Document     filename=${FILE_PATH}    doc_id=docid
+    Open Excel Document     filename=${FILE_PATH}    doc_id=1
 
 Read Excel Cells
     [Arguments]    ${row}   ${col}
@@ -33,6 +33,3 @@ Loop And Read Through Cells And Append List
         Append To List  ${INPUT_DATA}   ${CELL_VALUE}
         END
     END
-
-Loop Through Excel Rows
-    FOR   ${row}   IN RANGE    2    11

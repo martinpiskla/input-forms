@@ -34,27 +34,7 @@ Insert Data Into Input Fields
         input text  ${LAST_NAME_INPUT}    ${INPUT_DATA}[1]
         input text  ${PHONE_INPUT}    ${INPUT_DATA}[6]
         input text  ${ROLE_INPUT}    ${INPUT_DATA}[3]
-        sleep    5s
+        sleep    2s
 
 Click Submit Button
         click button    ${SUBMIT_BUTTON}
-
-Insert Data Into Input Fields 2nd round
-        input text  ${ADDRESS_INPUT}    2nd test address 123
-        input text  ${COMPANY_INPUT}    second test company
-        input text  ${EMAIL_INPUT}    secondtest@meil.com
-        input text  ${FIRST_NAME_INPUT}    secondtest name
-        input text  ${LAST_NAME_INPUT}    secondname testss
-        input text  ${PHONE_INPUT}    +4222228999
-        input text  ${ROLE_INPUT}    Second Tester role
-        sleep    5s
-
-Insert Data Into Input Fields 3nd round
-        input text  ${ADDRESS_INPUT}    2nd test address 123
-        input text  ${COMPANY_INPUT}    second test company
-        input text  ${EMAIL_INPUT}    secondtest@meil.com
-        input text  ${FIRST_NAME_INPUT}    ${CELL_VALUE}
-        input text  ${LAST_NAME_INPUT}    secondname testss
-        input text  ${PHONE_INPUT}    +4222228999
-        input text  ${ROLE_INPUT}    Second Tester role
-        sleep    5s

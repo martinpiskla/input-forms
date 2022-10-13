@@ -1,11 +1,20 @@
-1665522874487	geckodriver	INFO	Listening on 127.0.0.1:50943
-1665522877573	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50944" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileok0DZ9"
-1665522878569	Marionette	INFO	Marionette enabled
-1665522878580	Marionette	INFO	Listening on port 50955
-Read port: 50955
-WebDriver BiDi listening on ws://127.0.0.1:50944
-1665522878815	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofileok0DZ9\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:50944/devtools/browser/ed33e007-0f94-469f-971d-7fde7a37a6fa
-1665522898902	Marionette	INFO	Stopped listening on port 50955
-[Parent 7752, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1665648478235	geckodriver	INFO	Listening on 127.0.0.1:50636
+1665648481276	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50637" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofilepU22x9"
+1665648481767	Marionette	INFO	Marionette enabled
+1665648481775	Marionette	INFO	Listening on port 50646
+Read port: 50646
+WebDriver BiDi listening on ws://127.0.0.1:50637
+1665648481945	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Martin\\AppData\\Local\\Temp\\rust_mozprofilepU22x9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50637/devtools/browser/7086f59b-5dc5-4056-94ca-e5705611531d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.rpachallenge.com."
+1665648514760	Marionette	INFO	Stopped listening on port 50646

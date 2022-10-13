@@ -9,6 +9,7 @@ ${BROWSER} =        firefox
 ${START_URL} =      https://www.rpachallenge.com
 
 *** Tasks ***
-Input data
-    [Documentation]    Task imports
-    InputApp.Enter Data
+Input Forms
+    [Documentation]    Task loops through source excel file and inputs the data into corresponding input fields of specific webpage
+    InputApp.Load Input Page And Verify
+    InputApp.Read And Enter Data

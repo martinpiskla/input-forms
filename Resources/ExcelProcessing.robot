@@ -25,9 +25,8 @@ Clear List Values
 
 Loop And Read Through Cells And Append List
     [Arguments]     ${iteration}
-    FOR    ${row}   IN      ${iteration}
-        FOR   ${col}   IN RANGE    1    8
-        #do something
+    FOR    ${row}   IN      ${iteration}    #1st For Loop loops through rows
+        FOR   ${col}   IN RANGE    1    8   #2nd For Loop loops through columns
         Read Excel Cells    ${row}  ${col}
         Log     ${CELL_VALUE}   console=yes
         Append To List  ${INPUT_DATA}   ${CELL_VALUE}

@@ -1,10 +1,11 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library     Collections
+Resource    ExcelProcessing.robot
 
 *** Keywords ***
 Begin Web Test
     Open Browser        about:blank     ${BROWSER}
-
+    ExcelProcessing.Open Excel File
 End Web Test
     Close Browser
+    ExcelProcessing.Close Excel File
